@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dataset of Customer Purchase Behavior</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            /* background-color: #f0f0f0; */
+            background: url('https://img.freepik.com/free-vector/background-abstract-line-digital-design-gradient-template_483537-2161.jpg?t=st=1712985751~exp=1712989351~hmac=7ca4a705c467036e9bdb02aa3fae6e5cdf9a923f3b6290529b9f9f7899668652&w=1060');
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        table {
+            width: 70%;
+            margin: 15px auto;
+            border-collapse: separate; /* Use separate border model */
+            border-spacing: 0; /* Adjust the space between the border edges */
+            background-color: #d2e8ed;
+            border-radius:6px;
+            box-shadow: 0 0 10px rgba(175, 204, 211, 0.1);
+            border: 2px solid rgb(152, 196, 196); /* Add border */
+        }
+
+        th, td {
+            padding: 8px;
+            border-bottom: 1px solid #717e81;
+            text-align: left;
+        }
+
+        th {
+            background-color: #9fccd6;
+            font-weight: bold;
+            
+        }
+
+        tr:hover {
+            background-color: #f8f8f8;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dataset of Customer Purchase Behavior</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Age</th>
+                <th>Gender</th>
+                <th>Income</th>
+                <th>Education</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in customer_data %}
+            <tr>
+                <td>{{ row[0] }}</td>
+                <td>{{ row[1] }}</td>
+                <td>{{ row[2] }}</td>
+                <td>{{ row[3] }}</td>
+                <td>{{ row[4] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
+    
+
+
+
