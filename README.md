@@ -81,3 +81,34 @@ def data():
 if __name__ == '__main__':
     app.run(debug=True)
 ```
+
+###Setup Instructions
+
+1. Clone the Repository:
+
+```
+git clone https://github.com/vindy92/DAB111_project_Group_5.git
+```
+
+2. Install Dependencies:
+```
+pip install -r requirements.txt
+```
+
+3.Set Up Database:
+- Ensure SQLite is installed.
+- Execute the database creation script in the database directory.
+
+4.Run the Application:
+```
+python website/app.py
+```
+
+5. Access the Website:
+Open the web browser and go to http://localhost:5000 to view the homepage.
+
+
+# Contributors
+- Vindya Nayomi Senadheera Kalatuwage Alias Senadheera Achchige - (Student no: W0857437)
+- Prableen Kaur - (Student no: W0857194)
+- Rajwinder Kaur - (Student no: W0831280)
